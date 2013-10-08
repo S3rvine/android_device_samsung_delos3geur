@@ -87,6 +87,9 @@ WIFI_DRIVER_MODULE_NAME := "ath6kl_sdio"
 # Adreno configuration
 BOARD_EGL_CFG := device/samsung/delos-common/configuration/egl.cfg
 
+# Headers
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/delos-common/bluetooth
+
 # Recovery
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
