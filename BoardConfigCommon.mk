@@ -43,6 +43,9 @@ TARGET_NO_RADIOIMAGE := true
 
 
 # Kernel
+TARGET_KERNEL_CONFIG := cyanogenmod_delos_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/delos
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
