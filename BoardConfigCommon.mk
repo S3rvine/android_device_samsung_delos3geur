@@ -83,3 +83,6 @@ BOARD_HOSTAPD_DRIVER := NL80211
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/ath6kl_sdio.ko"
 WIFI_DRIVER_MODULE_NAME := "ath6kl_sdio"
+
+# Adreno configuration
+BOARD_EGL_CFG := device/samsung/delos-common/configuration/egl.cfg
