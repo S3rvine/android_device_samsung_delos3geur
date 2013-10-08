@@ -73,8 +73,7 @@ TARGET_USES_QCOM_BSP := true
 #TARGET_QCOM_MEDIA_VARIANT := caf
 BOARD_USES_LIBMEDIA_WITH_AUDIOPARAMETER := true
 
-# TWRP specific build flags
-DEVICE_RESOLUTION := 480x800
+
 
 # Wi-Fi
 BOARD_WLAN_DEVICE := ath6kl
@@ -86,3 +85,11 @@ WIFI_DRIVER_MODULE_NAME := "ath6kl_sdio"
 
 # Adreno configuration
 BOARD_EGL_CFG := device/samsung/delos-common/configuration/egl.cfg
+
+# Recovery
+BOARD_HAS_NO_MISC_PARTITION := true
+BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_RECOVERY_FSTAB := device/samsung/delos-common/recovery.fstab
+
+# TWRP specific build flags
+DEVICE_RESOLUTION := 480x800
