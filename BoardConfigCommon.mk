@@ -107,9 +107,6 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_FSTAB := device/samsung/delos-common/recovery.fstab
 
 # Misc
-
-TARGET_NO_HW_VSYNC := true
-TARGET_USES_ION := false
 BOARD_EGL_NEEDS_LEGACY_FB := true
 
 # TWRP specific build flags
