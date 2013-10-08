@@ -90,6 +90,11 @@ BOARD_EGL_CFG := device/samsung/delos-common/configuration/egl.cfg
 # Headers
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/delos-common/bluetooth
 
+# RIL
+BOARD_RIL_CLASS := ../../../device/samsung/delos-common/libril/
+BOARD_USES_LEGACY_RIL := true
+BOARD_USES_LIBSECRIL_STUB := true
+
 # Recovery
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
