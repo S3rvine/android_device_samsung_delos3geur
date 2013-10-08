@@ -61,6 +61,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Audio
 BOARD_HAVE_SAMSUNG_AUDIO := true
+TARGET_QCOM_AUDIO_VARIANT := caf
 BOARD_USES_ALSA_AUDIO := true
 BOARD_USES_FLUENCE_INCALL := true
 BOARD_USES_FLUENCE_FOR_VOIP := true
@@ -86,8 +87,13 @@ WIFI_DRIVER_MODULE_NAME := "ath6kl_sdio"
 
 # Adreno configuration
 BOARD_EGL_CFG := device/samsung/delos-common/configuration/egl.cfg
+USE_OPENGL_RENDERER := true
+ENABLE_WEBGL := true
+TARGET_FORCE_CPU_UPLOAD := true
 
-# Headers
+# BT
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/delos-common/bluetooth
 
 # RIL
@@ -99,6 +105,12 @@ BOARD_USES_LIBSECRIL_STUB := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_FSTAB := device/samsung/delos-common/recovery.fstab
+
+# Misc
+
+TARGET_NO_HW_VSYNC := true
+TARGET_USES_ION := false
+BOARD_EGL_NEEDS_LEGACY_FB := true
 
 # TWRP specific build flags
 DEVICE_RESOLUTION := 480x800
