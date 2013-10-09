@@ -43,8 +43,8 @@ TARGET_NO_RADIOIMAGE := true
 
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_delos_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/delos
+TARGET_KERNEL_CONFIG := cyanogenmod_delos3geur_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/delos3geur
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x00200000
@@ -86,7 +86,7 @@ WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/ath6kl_sdio.ko"
 WIFI_DRIVER_MODULE_NAME := "ath6kl_sdio"
 
 # Adreno configuration
-BOARD_EGL_CFG := device/samsung/delos-common/configuration/egl.cfg
+BOARD_EGL_CFG := device/samsung/delos3geur/configuration/egl.cfg
 USE_OPENGL_RENDERER := true
 ENABLE_WEBGL := true
 TARGET_FORCE_CPU_UPLOAD := true
@@ -94,17 +94,19 @@ TARGET_FORCE_CPU_UPLOAD := true
 # BT
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/delos-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/delos3geur/bluetooth
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/delos-common/libril/
+BOARD_RIL_CLASS := ../../../device/samsung/delos3geur/libril/
 BOARD_USES_LEGACY_RIL := true
 BOARD_USES_LIBSECRIL_STUB := true
 
 # Recovery
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/samsung/delos-common/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/delos3geur/recovery.fstab
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/delos3geur/recovery/graphics.c
+-TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/delos3geur/recovery_kernel
 
 # Misc
 BOARD_EGL_NEEDS_LEGACY_FB := true
