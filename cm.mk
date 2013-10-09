@@ -21,6 +21,6 @@ PRODUCT_RELEASE_NAME := delos3gxx
 
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRODUCT_NAME=u8860 \
+	PRODUCT_NAME=delos3geur \
 	BUILD_FINGERPRINT=samsung/delos3gxx:4.1.2:userdebug/test-keys \
 	PRIVATE_BUILD_DESC="samsung-user 4.1.2 test-keys" \
