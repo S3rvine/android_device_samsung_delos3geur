@@ -13,7 +13,9 @@
 # limitations under the License.
 #
 
-USE_CAMERA_STUB := false
+# inherit from the proprietary version
+-include vendor/samsung/delos3geur/BoardConfigVendor.mk
+
 BOARD_VENDOR := samsung
 
 TARGET_GLOBAL_CFLAGS   += -mtune=cortex-a5 -mfpu=neon -mfloat-abi=softfp

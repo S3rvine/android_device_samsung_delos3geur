@@ -96,3 +96,6 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm7627a	
+	
+# Include non-opensource parts
+$(call inherit-product, vendor/samsung/delos3geur/delos3geur-vendor.mk)
