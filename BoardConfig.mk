@@ -43,9 +43,10 @@ TARGET_NO_RADIOIMAGE := true
 
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_delos3geur_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/delos3geur
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+TARGET_PREBUILT_KERNEL := device/samsung/delos3geur/kernel
+#TARGET_KERNEL_CONFIG := cyanogenmod_delos3geur_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/delos3geur
+#TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
@@ -106,7 +107,7 @@ BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_FSTAB := device/samsung/delos3geur/recovery.fstab
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/delos3geur/recovery/graphics.c
--TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/delos3geur/recovery_kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/delos3geur/recovery_kernel
 
 # Misc
 BOARD_EGL_NEEDS_LEGACY_FB := true
