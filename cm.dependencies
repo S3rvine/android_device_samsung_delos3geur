@@ -1,9 +1,5 @@
 [
   {
-    "repository": "android_kernel_samsung_delos3geur",
-    "target_path": "kernel/samsung/delos3geur"
-  },
-  {
     "repository": "android_hardware_samsung",
     "target_path": "hardware/samsung"
   },
