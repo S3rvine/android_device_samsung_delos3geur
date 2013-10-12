@@ -3,7 +3,7 @@ TARGET_SCREEN_WIDTH := 480
 TARGET_SCREEN_HEIGHT := 800
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/delos3gxx/full_delos3geur.mk)
+$(call inherit-product, device/samsung/delos3geur/full_delos3geur.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -17,10 +17,10 @@ PRODUCT_DEVICE := delos3geur
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := Galaxy Grand Quattro
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_RELEASE_NAME := delos3gxx
+PRODUCT_RELEASE_NAME := delos3geur
 
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRODUCT_NAME=delos3geur \
-	BUILD_FINGERPRINT=samsung/delos3gxx:4.1.2:userdebug/test-keys \
+	BUILD_FINGERPRINT=samsung/delos3geur:4.1.2:userdebug/test-keys \
 	PRIVATE_BUILD_DESC="samsung-user 4.1.2 test-keys" \
