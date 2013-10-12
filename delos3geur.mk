@@ -38,10 +38,10 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-	audio.primary.msm7627a \
+    audio.primary.msm7627a \
     audio.primary.default \
     audio_policy.msm7627a \
-	audio_policy.default \
+    audio_policy.default \
     audio.a2dp.default \
     audio_policy.conf \
     libaudioutils
@@ -57,10 +57,13 @@ PRODUCT_PACKAGES += \
   
 # HW
 PRODUCT_PACKAGES += \
+    libgenlock \
+    liboverlay \
     gralloc.msm7627a \
-	hwcomposer.msm7627a \
-	copybit.msm7627a \
-	libtilerenderer
+    hwcomposer.msm7627a \
+    copybit.msm7627a \
+    libtilerenderer \
+    libqdMetaData
 
 
 # Bluetooth
