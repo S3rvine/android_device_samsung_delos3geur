@@ -38,67 +38,67 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.primary.msm7627a \
-    audio.primary.default \
-    audio_policy.msm7627a \
-    audio_policy.default \
-    audio.a2dp.default \
-    audio_policy.conf \
-    libaudioutils
+	audio.primary.msm7627a \
+	audio.primary.default \
+   	audio_policy.msm7627a \
+    	audio_policy.default \
+    	audio.a2dp.default \
+    	audio_policy.conf \
+    	libaudioutils
   
 # Video decoding
 PRODUCT_PACKAGES += \
-    libmm-omxcore \
-    libstagefrighthw \
-    libOmxCore \
-    libI420colorconvert \
-    libdashplayer \
-    qcmediaplayer
+    	libmm-omxcore \
+    	libstagefrighthw \
+    	libOmxCore \
+    	libI420colorconvert \
+    	libdashplayer \
+    	qcmediaplayer
   
 # HW
 PRODUCT_PACKAGES += \
-    libgenlock \
-    liboverlay \
-    gralloc.msm7627a \
-    hwcomposer.msm7627a \
-    copybit.msm7627a \
-    libtilerenderer \
-    libqdMetaData
+    	libgenlock \
+    	liboverlay \
+    	gralloc.msm7627a \
+    	hwcomposer.msm7627a \
+    	copybit.msm7627a \
+    	libtilerenderer \
+    	libqdMetaData
 
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    hciconfig \
-    hcitool
+    	hciconfig \
+    	hcitool
 
 # Misc
 PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
+    	com.android.future.usb.accessory
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers \
-    HoloSpiralWallpaper \
-    VisualizationWallpapers \
-    librs_jni
+    	LiveWallpapers \
+    	LiveWallpapersPicker \
+    	MagicSmokeWallpapers \
+    	HoloSpiralWallpaper \
+    	VisualizationWallpapers \
+    	librs_jni
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    power.msm7627a
+    	power.msm7627a
 	
 # Light HALO
 PRODUCT_PACKAGES += \
-    lights.msm7627a
+    	lights.msm7627a
 	
 # GPS
 PRODUCT_PACKAGES += \
-    gps.default
+    	gps.default
     
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm7627a	
+    	camera.msm7627a	
 	
 # Include non-opensource parts
 $(call inherit-product, vendor/samsung/delos3geur/delos3geur-vendor.mk)
