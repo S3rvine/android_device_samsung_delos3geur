@@ -6,7 +6,7 @@ TARGET_SCREEN_HEIGHT := 800
 $(call inherit-product, device/samsung/delos3geur/full_delos3geur.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/gsm.mk)
