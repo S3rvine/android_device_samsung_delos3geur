@@ -45,14 +45,12 @@ TARGET_NO_RADIOIMAGE := true
 
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/delos3geur/kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
 BOARD_KERNEL_PAGESIZE := 4096
-#TARGET_KERNEL_CONFIG := cyanogenmod_delos3geur_defconfig
-#TARGET_KERNEL_SOURCE := kernel/samsung/delos3geur
-#TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+TARGET_KERNEL_CONFIG := cyanogenmod_delos3geur_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/delos3geur
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 4096 # 4 MB
@@ -106,7 +104,8 @@ BOARD_USES_LIBSECRIL_STUB := true
 # Recovery
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/samsung/delos3geur/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/delos3geur/configuration/fstab.delos3geur
+RECOVERY_FSTAB_VERSION := 2
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/delos3geur/recovery/graphics.c
 
 # Misc
