@@ -45,14 +45,13 @@ TARGET_NO_RADIOIMAGE := true
 
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/delos3geur/kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
 BOARD_KERNEL_PAGESIZE := 4096
-#TARGET_KERNEL_CONFIG := cyanogenmod_delos3geur_defconfig
-#TARGET_KERNEL_SOURCE := kernel/samsung/delos3geur
-#TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+TARGET_KERNEL_CONFIG := cyanogenmod_delos3geur_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/delos3geur
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 4096 # 4 MB
