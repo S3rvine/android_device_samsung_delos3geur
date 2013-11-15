@@ -21,7 +21,6 @@ BOARD_VENDOR := samsung
 TARGET_GLOBAL_CFLAGS   += -mtune=cortex-a5 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a5 -mfpu=neon -mfloat-abi=softfp
 COMMON_GLOBAL_CFLAGS   += -DQCOM_NO_SECURE_PLAYBACK -DBINDER_COMPAT
-COMMON_GLOBAL_CFLAGS   += -DQCOM_HARDWARE -DNO_UPDATE_PREVIEW
 
 
 TARGET_BOARD_PLATFORM := msm7x27a
@@ -38,6 +37,20 @@ ARCH_ARM_HIGH_OPTIMIZATION := true
 ARCH_ARM_HAVE_NEON := true
 TARGET_BOOTLOADER_BOARD_NAME := delos3geur
 
+# QCOM enhancements
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_USES_QCOM_BSP := true
+COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP
+TARGET_QCOM_DISPLAY_VARIANT := legacy
+TARGET_QCOM_MEDIA_VARIANT := legacy
+
+# Krait optimizations
+TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
+TARGET_USE_KRAIT_PLD_SET := true
+TARGET_KRAIT_BIONIC_PLDOFFS := 10
+TARGET_KRAIT_BIONIC_PLDTHRESH := 10
+TARGET_KRAIT_BIONIC_BBTHRESH := 64
+TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 # Target information
 TARGET_NO_BOOTLOADER := true
@@ -51,7 +64,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01300000
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_CONFIG := cyanogenmod_delos3geur_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/delos3geur
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 4096 # 4 MB
@@ -105,7 +117,8 @@ BOARD_USES_LIBSECRIL_STUB := true
 # Recovery
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/samsung/delos3geur/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/delos3geur/configuration/fstab.delos3geur
+RECOVERY_FSTAB_VERSION := 2
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/delos3geur/recovery/graphics.c
 
 # Misc
