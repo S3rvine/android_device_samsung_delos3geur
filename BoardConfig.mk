@@ -117,8 +117,7 @@ BOARD_USES_LIBSECRIL_STUB := true
 # Recovery
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/samsung/delos3geur/configuration/fstab.delos3geur
-RECOVERY_FSTAB_VERSION := 2
+TARGET_RECOVERY_FSTAB := device/samsung/delos3geur/recovery.fstab
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/delos3geur/recovery/graphics.c
 
 # Misc
