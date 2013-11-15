@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     	power.msm7627a
 	
-# Light HALO
+# Lights HAL
 PRODUCT_PACKAGES += \
     	lights.msm7627a
 	
@@ -97,6 +97,13 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     	camera.msm7627a	
-	
+
+# Wi-Fi
+PRODUCTS_PACKAGES += \
+        ath6kl_sdio.ko	
+
+PRODUCT_COPY_FILES += \
+        device/samsung/delos3geur/prebuilt/lib/modules/ath6kl_sdio.ko:system/lib/modules/ath6kl_sdio.ko
+
 # Include non-opensource parts
 $(call inherit-product, vendor/samsung/delos3geur/delos3geur-vendor.mk)
